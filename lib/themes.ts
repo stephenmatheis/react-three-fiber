@@ -42,3 +42,7 @@ export function getLightThemes() {
 export function getLightThemeNames() {
     return getLightThemes().map(({ name }) => name);
 }
+
+export function getDefaultTheme() {
+    return variables.default;
+}

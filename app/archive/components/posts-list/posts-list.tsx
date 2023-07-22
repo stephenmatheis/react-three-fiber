@@ -48,8 +48,6 @@ export function PostsList({ posts }: { posts: Post[] }) {
         }
     }, [tags]);
 
-    console.log('posts:', filteredPosts);
-
     return (
         <>
             <div className={styles.title}>
@@ -62,7 +60,9 @@ export function PostsList({ posts }: { posts: Post[] }) {
                 </div>
             )}
             {filteredPosts.length === 0 ? (
-                <div className={styles.none}>There are no posts that match this query.</div>
+                <div className={styles.none}>
+                    There are no posts that match this query.
+                </div>
             ) : (
                 <ul className={styles.container}>
                     {months.map((date) => {
