@@ -1,6 +1,6 @@
 import { Page } from '@/components/page';
 import { Main } from '@/components/main';
-import { Memoji } from '@/components/memoji';
+// import { Memoji } from '@/components/memoji';
 import { Cube } from '@/components/cube';
 
 export default function RootPage() {
@@ -13,10 +13,10 @@ export default function RootPage() {
                 },
             ]}
         >
-            <Main columns={2}>
+            <Main columns={2} style={{ zIndex: 1, pointerEvents: 'none' }}>
                 {/* <Memoji /> */}
-                <Cube />
             </Main>
+            <Cube />
         </Page>
     );
 }

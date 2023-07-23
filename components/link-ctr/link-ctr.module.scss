@@ -1,6 +1,7 @@
 @use 'styles/utilities';
 
 .link {
+    pointer-events: all;
     cursor: pointer;
 
     @media (hover: hover) {

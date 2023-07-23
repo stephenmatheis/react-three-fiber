@@ -1,7 +1,70 @@
+@use 'styles/utilities';
+
+// .cube {
+//     --margin-top: calc(var(--line-height) * 7);
+//     --margin-bottom: calc(var(--line-height) * 2);
+//     --gap-offset-top: calc(var(--line-height) * 10);
+//     --gap-offset-bottom: calc(var(--line-height) * 7.5);
+
+//     // background-color: #00aaff50;
+
+//     height: calc(
+//         100vh - var(--margin-top) - var(--margin-bottom) - var(--gap-offset-top) -
+//             var(--gap-offset-bottom)
+//     );
+//     width: var(--max-width);
+//     position: fixed;
+//     top: calc(var(--margin-top) + var(--gap-offset-top));
+//     left: 50%;
+//     transform: translate(-50%, 0);
+//     z-index: 0;
+
+//     @media screen {
+//         max-width: calc(var(--max-width) - 1in);
+//         transition: padding-top 450ms ease-in-out;
+
+//         @media (max-height: utilities.$medium-height) {
+//             --margin-top: calc(var(--line-height) * 2);
+//         }
+
+//         @media (max-height: 640px) {
+//             --gap-offset-top: calc(var(--line-height) * 8);
+//             --gap-offset-bottom: calc(var(--line-height) * 6.5);
+//         }
+
+//         @media (max-height: 585px) {
+//             --gap-offset-top: calc(var(--line-height) * 6);
+//             --gap-offset-bottom: calc(var(--line-height) * 5.5);
+//         }
+
+//         @media (max-height: 530px) {
+//             --gap-offset-top: calc(var(--line-height) * 4);
+//             --gap-offset-bottom: calc(var(--line-height) * 4.5);
+//         }
+
+//         @media (min-width: utilities.$large-width) {
+//             --gap-offset-top: calc(var(--line-height) * 6);
+//             --gap-offset-bottom: calc(var(--line-height) * 8.5);
+
+//             // background-color: #00ffaa50;
+//         }
+
+//         @media (max-width: utilities.$medium-width) {
+//             width: 100%;
+//             align-items: center;
+//         }
+
+//         @media (max-width: utilities.$small-width) {
+//             max-width: calc(100vw - 0.5in);
+//         }
+//     }
+// }
+
 .cube {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // background-color: lightseagreen;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -0;
 }

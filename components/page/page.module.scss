@@ -4,12 +4,12 @@
     font-family: var(--font-family);
     min-height: 100dvh;
     width: var(--max-width);
-    padding: 0.5in;
     display: flex;
     flex-direction: column;
     gap: var(--page-gap);
 
     @media print {
+        padding: 0.5in;
         gap: calc(var(--line-height) * 2);
         width: 8.5in;
     }
@@ -27,13 +27,15 @@
 
         @media (max-width: utilities.$small-width) {
             min-width: 100%;
-            padding-top: 0.5in;
+            // padding-top: 0.5in;
+            // padding-top: calc(var(--line-height) * 2);
             padding-left: 0.25in;
             padding-right: 0.25in;
         }
 
         @media (max-height: utilities.$medium-height) {
-            padding-top: 0.5in;
+            // padding-top: 0.5in;
+            padding-top: calc(var(--line-height) * 2);
         }
 
         @include utilities.gaps();

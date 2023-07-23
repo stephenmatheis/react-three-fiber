@@ -1,3 +1,4 @@
+import { CSSProperties } from 'react';
 import classNames from 'classnames';
 import { Sidebar } from '@/components/sidebar';
 import styles from './main.module.scss';
@@ -9,15 +10,23 @@ type Props = {
     right?: {
         className: string;
     };
+    style?: CSSProperties;
 };
 
-export function Main({ children, columns = 2, className, right }: Props) {
+export function Main({
+    children,
+    columns = 2,
+    className,
+    right,
+    style,
+}: Props) {
     return (
         <main
             className={classNames(styles.main, className, {
                 [styles['col-2']]: columns === 2,
                 [styles['col-3']]: columns === 3,
             })}
+            style={style}
         >
             <section className={styles.left}>
                 <Sidebar />
