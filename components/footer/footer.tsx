@@ -1,11 +1,6 @@
 import { LinkCtr } from '@/components/link-ctr';
+import type { Link } from '@/lib/types';
 import styles from './footer.module.scss';
-
-type Link = {
-    label: string;
-    path: string;
-    newTab?: boolean;
-};
 
 type Props = {
     links?: Link[];

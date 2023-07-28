@@ -18,3 +18,9 @@ export type Project = {
     description: string;
     href: string;
 };
+
+type Link = {
+    label: string;
+    path: string;
+    newTab?: boolean;
+};

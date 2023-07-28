@@ -60,11 +60,24 @@
 //     }
 // }
 
+// TODO: Instead of width/height,
+// use padding with the same calculations as above,
+// to enable camera controls over whole page
 .cube {
     height: 100vh;
     width: 100vw;
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: -0;
+}
+
+.loader {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    display: grid;
+    place-content: center;
 }

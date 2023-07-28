@@ -5,18 +5,21 @@ import { Cube } from '@/components/cube';
 
 export default function RootPage() {
     return (
-        <Page
-            links={[
-                {
-                    label: 'Settings',
-                    path: '/settings',
-                },
-            ]}
-        >
-            <Main columns={2} style={{ zIndex: 1, pointerEvents: 'none' }}>
-                {/* <Memoji /> */}
-            </Main>
+        <>
             <Cube />
-        </Page>
+            <Page
+                links={[
+                    {
+                        label: 'Settings',
+                        path: '/settings',
+                    },
+                ]}
+                style={{
+                    pointerEvents: 'none',
+                }}
+            >
+                <Main columns={2}>{/* <Memoji /> */}</Main>
+            </Page>
+        </>
     );
 }

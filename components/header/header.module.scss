@@ -4,6 +4,8 @@
     text-align: center;
 
     a {
+        pointer-events: all;
+
         .text {
             @include utilities.shadow-variables;
 
